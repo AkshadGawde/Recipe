@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Breakfast</a>
+        <a href="#">Lunch</a>
+        <a href="#">Dinner</a>
+        <a href="#">Snacks</a>
+        <a href="#">Desserts</a>
+        <div id="modeToggle" onclick="toggleMode()">
+            <i class="fas fa-sun"></i>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <h2 class="title">DISCOVER DELICIOUS RECIPES</h2>
+                <blockquote>Savor the flavor, elevate the mood.<br>
+                    <cite>- Akshad Gawde</cite>
+                </blockquote>
+                <div id="searchBox">
+                    <input type="text" id="inputBox" placeholder="Search your food">
+                    <button id="searchButton" onclick="redirect()">Search</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="meal-result">
+            <h2 class="title">Most Popular Food</h2>
+            <div id="meal">
+                <div class="meal-item">
+                    <div class="meal-img">
+                        <img src="./Images/fries.jpg" alt="food">
+                    </div>
+                    <div class="meal-name">
+                        <h3>Potato Fries</h3>
+                        <a href="#" class="recipe-btn btn">Get Recipe</a>
+                    </div>
+                </div>
+                <div id="meal">
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="./Images/paneer_tikka.jpg" alt="food">
+                        </div>
+                        <div class="meal-name">
+                            <h3>Panner Tikka</h3>
+                            <a href="#" class="recipe-btn btn">Get Recipe</a>
+                        </div>
+                    </div>
+
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="./Images/masala_dosa.jpg" alt="food">
+                        </div>
+                        <div class="meal-name">
+                            <h3>Masala Dosa</h3>
+                            <a href="#" class="recipe-btn btn">Get Recipe</a>
+                        </div>
+                    </div>
+
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="./Images/spegetti.jpg" alt="food">
+                        </div>
+                        <div class="meal-name">
+                            <h3>Spegetti</h3>
+                            <a href="#" class="recipe-btn btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="./Images/dhokla.jpeg" alt="food">
+                        </div>
+                        <div class="meal-name">
+                            <h3>Dhokla</h3>
+                            <a href="#" class="recipe-btn btn">Get Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./JS/index.js"></script>
+    </div>
+
+</body>
+
+</html>
