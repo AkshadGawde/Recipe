@@ -5,7 +5,7 @@ function redirect() {
   if (inputBox.value === "") {
     alert("Write something");
   } else {
-    window.location.href = inputBox.value + ".html";
+    window.location.href = "recipe/" + inputBox.value + ".html";
   }
 }
 

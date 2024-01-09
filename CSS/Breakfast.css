@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+body {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+:root {
+    --tenny-tawny: #000000;
+    --tenny-tawny-dark: #1642e2;
+    --background-light: #ffffff;
+    --text-dark: #000000;
+    --background-dark: #000000;
+    --text-light: #fff;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.dark-mode {
+    background-color: #000;
+    color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: inherit; 
+}
+
+.navbar.dark-mode a {
+    color: white;
+}
+.navbar:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.highlighted{
+    color: #edeef0;
+  }
