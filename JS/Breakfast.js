@@ -1,20 +1,3 @@
-const inputBox = document.getElementById("inputBox");
-const searchButton = document.getElementById("searchButton");
-
-function redirect() {
-  if (inputBox.value === "") {
-    alert("Write something");
-  } else {
-    window.location.href = "recipe/" + inputBox.value + ".html";
-  }
-}
-
-inputBox.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    redirect();
-  }
-});
-
 function toggleMode() {
   const body = document.body;
   body.classList.toggle("dark-mode");
@@ -50,3 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateToggleIcon();
   }
 });
+
+function goBack() {
+  window.location.href = "../Index.html";
+}

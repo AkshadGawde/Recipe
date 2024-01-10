@@ -9,7 +9,6 @@
     --text-light: #fff;
 }
 
-
 body {
     font-weight: 400;
     font-size: 1.2rem;
@@ -27,11 +26,32 @@ body.dark-mode {
     color: var(--text-light);
 }
 
-h2{
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .search-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .meal-search-box {
+        flex-direction: column;
+    }
+
+    .search-control {
+        border-radius: 0.5rem;
+        margin-top: 10px;
+    }
+}
+
+h2 {
     color: #000;
 }
 
-.dark-mode h2{
+.dark-mode h2 {
     color: #fff;
 }
 
@@ -52,11 +72,11 @@ blockquote {
     color: #272727;
 }
 
-blockquote{
+blockquote {
     color: #000;
 }
 
-.dark-mode blockquote{
+.dark-mode blockquote {
     color: #a8a5a5;
 }
 
@@ -188,9 +208,10 @@ blockquote{
 i {
     margin-right: 0.5rem;
 }
-#searchButton{
-    border:none;
-    outline:none;
+
+#searchButton {
+    border: none;
+    outline: none;
     background: #000;
     padding: 16px 50px;
     border-radius: 30px;
@@ -198,23 +219,26 @@ i {
     font-size: 16px;
     cursor: pointer;
 }
-#inputBox{
-        flex:1;
-        border: none;
-        outline: none;
-        background: transparent;
-        padding: 10px;
+
+#inputBox {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
 }
-#searchBox{
+
+#searchBox {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #edeef0;
     border-radius: 30px;
-    padding-left:20px;
+    padding-left: 20px;
     margin-top: 50px;
 }
-#searchButton:hover{
+
+#searchButton:hover {
     box-shadow: 0px 0px 500px 5px #000;
     color: #edeef0;
 }
@@ -225,7 +249,7 @@ i {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     background-color: var(--background-light);
     color: var(--text-dark);
@@ -244,7 +268,7 @@ i {
     margin: 0 15px;
     text-decoration: none;
     font-size: 16px;
-    color: inherit; 
+    color: inherit;
 }
 
 .navbar.dark-mode a {
@@ -256,11 +280,9 @@ i {
     flex-direction: column;
     align-items: center;
 }
-.dark-mode .container{
-    background-color: #000;
-}
 
-.dark-mode .container{
+.dark-mode .container {
+    background-color: #000;
     color: #000000;
 }
 
@@ -272,7 +294,6 @@ i {
     margin-top: 4rem;
 }
 
-
 .navbar:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
@@ -280,7 +301,6 @@ i {
 body {
     margin-top: 70px;
 }
-
 
 #modeToggle i {
     transition: transform 1.25s ease;
