@@ -8,13 +8,10 @@
     --background-dark: #000000;
     --text-light: #fff;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin: 0px;
+    padding: 0px;
 }
-
 body {
     font-weight: 400;
     font-size: 1.2rem;
@@ -26,79 +23,24 @@ body {
     padding: 20px;
     transition: background-color 0.5s, color 0.5s;
 }
-
 body.dark-mode {
     background-color: var(--background-dark);
     color: var(--text-light);
 }
-
-/* Add media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .navbar {
-        padding: 10px;
-    }
-
-    .card {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .navbar a {
-        font-size: 14px;
-    }
-
-    .recipe-title {
-        font-size: 14px;
-    }
-
-    .recipe-btn {
-        height: 25px;
-        min-width: 35px;
-    }
-}
-
-h2 {
+h2{
     color: #000;
 }
-
-.dark-mode h2 {
-    color: #000000;
+.dark-mode h2{
+    color: #fff;
 }
-
-#goBack {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    color: inherit;
-}
-
-#goBack i {
-    margin-right: 5px;
-}
-
 .title {
     color: var(--tenny-tawny);
     margin-bottom: 1rem;
     font-size: 2rem;
 }
-
 i {
     margin-right: 0.5rem;
 }
-
 .navbar {
     position: fixed;
     top: 0;
@@ -113,7 +55,6 @@ i {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .navbar.dark-mode {
     background-color: #000;
     color: white;
@@ -129,24 +70,21 @@ i {
     font-size: 16px;
     color: initial;
 }
-
 .navbar.dark-mode a {
     color: white;
 }
-
-.dark-mode .container {
+.dark-mode .container{
     background-color: #000;
-    color: white;
 }
-
+.dark-mode .container{
+    color: #000000;
+}
 .navbar:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-
 body {
     margin-top: 70px;
 }
-
 #modeToggle i {
     transition: transform 1.25s ease;
 }
@@ -154,68 +92,30 @@ body {
 #modeToggle.dark-mode i {
     transform: rotate(180deg);
 }
-
-.card {
+.container{
     display: grid;
-    width: 340px;
-    height: 270px;
+    padding: 20px;
+    height: 75vh;
+    border-radius: 30px;
     background-color: #edeef0;
-    grid-template-columns: 20px 260px 40px 20px;
-    grid-template-rows: 20px 200px 50px;
-    border-radius: 10px;
-    margin-top: 15px;
+    margin: 10px auto;
 }
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+.recipe-img{
+    border-radius: 30px;
+    object-fit:cover;
+    grid-area: 2/2/4/3;
+    width: 50vw;
+    height: 45vh;
 }
-
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+.recipe-title{
+    grid-area: 2/3;
+    margin-left:10px ;
+    font-size: 2.5rem;
 }
-
-.arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    margin: auto;
+a{
+    color: #000;
+    text-decoration: none;
 }
-
-.recipe-btn {
-    height: 30px;
-    padding: auto;
-    min-width: 40px;
+.recipe-text{
     grid-area: 3/3;
-    margin: 10px 5px 0px 0px;
-    background-color: transparent;
-    border: 0px;
-}
-
-.card-img {
-    height: 200px;
-    width: 300px;
-    object-fit: cover;
-    grid-area: 2/2/3/3;
-    border-radius: 10px;
-}
-
-.recipe-title {
-    grid-area: 3/2;
-    padding: 0px;
-    margin: auto 5px;
-}
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-content: space-evenly;
-}
-
-.recipe-btn:hover {
-    cursor: pointer;
 }
