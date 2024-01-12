@@ -10,7 +10,7 @@ inputBox.addEventListener("blur", function () {
 });
 
 function goBack() {
-  window.location.href = "../Index.html";
+  window.location.href = "../index.html";
 }
 
 function redirect() {
