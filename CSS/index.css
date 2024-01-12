@@ -291,6 +291,7 @@ i {
     font-size: 16px;
     color: inherit;
     transition: color 0.3s ease;
+    z-index: 2;
 }
 .navbar a:hover{
     color: #666666;
