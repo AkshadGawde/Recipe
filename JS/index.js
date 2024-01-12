@@ -5,9 +5,15 @@ inputBox.addEventListener("click" , function() {
     inputBox.setAttribute("placeholder" , "");
 
 });
+
 inputBox.addEventListener("blur", function() {
   inputBox.setAttribute("placeholder", "Search Your Food");
 });
+
+function goBack(){
+  window.location.href= "../Index.html";
+}
+
 function redirect() {
   if (inputBox.value === "") {
     alert("Write something");
