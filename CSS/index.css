@@ -328,3 +328,7 @@ body {
 #modeToggle.dark-mode i {
     transform: rotate(180deg);
 }
+.navbar .highlighted{
+    color: #666666;
+    text-decoration: none;
+  }
