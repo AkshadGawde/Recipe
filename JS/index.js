@@ -1,6 +1,13 @@
 const inputBox = document.getElementById("inputBox");
 const searchButton = document.getElementById("searchButton");
 
+inputBox.addEventListener("click" , function() {
+    inputBox.setAttribute("placeholder" , "");
+
+});
+inputBox.addEventListener("blur", function() {
+  inputBox.setAttribute("placeholder", "Search Your Food");
+});
 function redirect() {
   if (inputBox.value === "") {
     alert("Write something");
