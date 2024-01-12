@@ -20,7 +20,6 @@
         <a href="#">Desserts</a>
         <div id="modeToggle" onclick="toggleMode()">
             <i class="fas fa-sun"></i>
-
         </div>
     </div>
 
@@ -35,13 +34,12 @@
                     <input type="text" id="inputBox" placeholder="Search your food">
                     <button id="searchButton" onclick="redirect()">Search</button>
                 </div>
-
             </div>
         </div>
 
         <div class="meal-result">
             <h2 class="title">Most Popular Food</h2>
-            <div id="meal">
+            <div class="meal"> <!-- Change 'id' to 'class' for meal container -->
                 <div class="meal-item">
                     <div class="meal-img">
                         <img src="./Images/fries.jpg" alt="food">
@@ -51,49 +49,47 @@
                         <a href="#" class="recipe-btn btn">Get Recipe</a>
                     </div>
                 </div>
-                <div id="meal">
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="./Images/paneer_tikka.jpg" alt="food">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Panner Tikka</h3>
-                            <a href="#" class="recipe-btn btn">Get Recipe</a>
-                        </div>
+                <div class="meal-item">
+                    <!-- Add missing closing div tag for the previous meal-item -->
+                    <div class="meal-img">
+                        <img src="./Images/paneer_tikka.jpg" alt="food">
                     </div>
+                    <div class="meal-name">
+                        <h3>Panner Tikka</h3>
+                        <a href="#" class="recipe-btn btn">Get Recipe</a>
+                    </div>
+                </div>
 
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="./Images/masala_dosa.jpg" alt="food">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Masala Dosa</h3>
-                            <a href="#" class="recipe-btn btn">Get Recipe</a>
-                        </div>
+                <div class="meal-item">
+                    <div class="meal-img">
+                        <img src="./Images/masala_dosa.jpg" alt="food">
                     </div>
+                    <div class="meal-name">
+                        <h3>Masala Dosa</h3>
+                        <a href="#" class="recipe-btn btn">Get Recipe</a>
+                    </div>
+                </div>
 
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="./Images/spegetti.jpg" alt="food">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Spegetti</h3>
-                            <a href="#" class="recipe-btn btn">Get Recipe</a>
-                        </div>
+                <div class="meal-item">
+                    <div class="meal-img">
+                        <img src="./Images/spegetti.jpg" alt="food">
                     </div>
-                    <div class="meal-item">
-                        <div class="meal-img">
-                            <img src="./Images/dhokla.jpeg" alt="food">
-                        </div>
-                        <div class="meal-name">
-                            <h3>Dhokla</h3>
-                            <a href="#" class="recipe-btn btn">Get Recipe</a>
-                        </div>
+                    <div class="meal-name">
+                        <h3>Spegetti</h3>
+                        <a href="#" class="recipe-btn btn">Get Recipe</a>
+                    </div>
+                </div>
+                <div class="meal-item">
+                    <div class="meal-img">
+                        <img src="./Images/dhokla.jpeg" alt="food">
+                    </div>
+                    <div class="meal-name">
+                        <h3>Dhokla</h3>
+                        <a href="#" class="recipe-btn btn">Get Recipe</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="./JS/index.js"></script>
