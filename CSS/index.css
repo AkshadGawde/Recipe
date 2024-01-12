@@ -19,11 +19,14 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.5s, color 0.5s;
+    scrollbar-width: thin;
+    scrollbar-color: var(--tenny-tawny) var(--background-light);
 }
 
 body.dark-mode {
     background-color: var(--background-dark);
     color: var(--text-light);
+    scrollbar-color: #1642e2 #000000;
 }
 
 .background-image {
@@ -41,8 +44,8 @@ body.dark-mode {
     transition: opacity 0.5s; 
 }
 
-body.scrolled .background-image {
-    opacity: 0.2; 
+body.dark-mode .background-image {
+    opacity: 0.1;
 }
 
 @media screen and (max-width: 768px) {
@@ -169,6 +172,10 @@ blockquote {
     text-align: left;
 }
 
+.dark-mode .meal-name{
+    color: #000;
+}
+
 .recipe-btn {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -212,6 +219,8 @@ blockquote {
     color: var(--tenny-tawny);
     margin-bottom: 1rem;
     font-size: 2rem;
+    text-align: center;
+    padding: 3%;
 }
 
 #meal {
@@ -228,14 +237,24 @@ i {
     margin-right: 0.5rem;
 }
 
-
 #searchButton {
     border: none;
     outline: none;
-    background: #000;
+    background: #000000;
     padding: 16px 50px;
     border-radius: 30px;
     color: #edeef0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dark-mode #searchButton{
+    border: none;
+    outline: none;
+    background: #7e7e7e;
+    padding: 16px 50px;
+    border-radius: 30px;
+    color: #000000;
     font-size: 16px;
     cursor: pointer;
 }
@@ -293,32 +312,53 @@ i {
     transition: color 0.3s ease;
     z-index: 2;
 }
+
 .navbar a:hover{
     color: #666666;
     text-decoration: none;
 }
 
 .navbar.dark-mode a {
-    color: white;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dark-mode .container {
-    background-color: #000;
     color: #000000;
 }
 
-.meal-result {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-top: 4rem;
+.container.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.meal-result.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.title.dark-mode {
+    color: var(--tenny-tawny);
+}
+
+.meal-item.dark-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.meal-item.dark-mode:hover {
+    background-color: #edeef0;
+    color: #000;
+}
+
+#searchButton.dark-mode {
+    background: #7e7e7e;
+    color: #000000;
+}
+
+#searchButton.dark-mode:hover {
+    box-shadow: 0px 0px 500px 5px #000;
+    color: #edeef0;
+}
+
+.meal-item:hover.dark-mode {
+    background-color: #edeef0;
+    color: #000;
 }
 
 .navbar:hover {
@@ -337,7 +377,31 @@ body {
 #modeToggle.dark-mode i {
     transform: rotate(180deg);
 }
+
 .navbar .highlighted{
     color: #666666;
     text-decoration: none;
-  }
+}
+
+/* Add custom scrollbar styling */
+body::-webkit-scrollbar {
+    width: 10px;
+    margin-left: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--tenny-tawny);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--background-light);
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background-color: #424141;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background-color: #000000;
+}

@@ -1,17 +1,16 @@
 const inputBox = document.getElementById("inputBox");
 const searchButton = document.getElementById("searchButton");
 
-inputBox.addEventListener("click" , function() {
-    inputBox.setAttribute("placeholder" , "");
-
+inputBox.addEventListener("click", function () {
+  inputBox.setAttribute("placeholder", "");
 });
 
-inputBox.addEventListener("blur", function() {
+inputBox.addEventListener("blur", function () {
   inputBox.setAttribute("placeholder", "Search Your Food");
 });
 
-function goBack(){
-  window.location.href= "../Index.html";
+function goBack() {
+  window.location.href = "../Index.html";
 }
 
 function redirect() {
