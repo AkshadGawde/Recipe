@@ -212,7 +212,7 @@ blockquote {
 }
 
 .meal-result {
-    margin-top: 4rem;
+    margin-top: 11.5rem;
 }
 
 .title {
@@ -275,6 +275,7 @@ i {
     border-radius: 30px;
     padding-left: 20px;
     margin-top: 50px;
+    filter: drop-shadow(black 0rem 0.1rem 10px);
 }
 
 #searchButton:hover {
